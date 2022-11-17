@@ -57,7 +57,7 @@ Note that ConSumSlice, Microbat, and TRegression projects are Eclipse plugin pro
 
 3. Please unzip the junit_lib (https://github.com/anonymousresearcher2020/ConSumSlice/blob/main/ConSumSlice/lib/junit_lib.zip) under the dropins directory of your eclipse root folder. It contains all the runtime Java libraries required for running microbat and tregression:
 ````yaml
-$path-to-eclipse_root_folder\dropins\junit_lib.
+$path-to-eclipse_root_folder/dropins/junit_lib
 ````
 For example,
 ````yaml
