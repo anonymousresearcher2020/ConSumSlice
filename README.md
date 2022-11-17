@@ -43,6 +43,7 @@ Note that ConSumSlice, Microbat, and TRegression projects are Eclipse plugin pro
 
 1. You need to import the following projects through "Existing Projects into Workspace":
 
+<img align="right" src="img/structure.png" alt="drawing" width="250"/>
 - ConSumSlice
 - mirobat/experiment.utils
 - microbat/mirobat
@@ -51,7 +52,7 @@ Note that ConSumSlice, Microbat, and TRegression projects are Eclipse plugin pro
 - mirobat/mutation
 - mirobat/sav.commons
 - tregression/tregression
-<img align="right" src="img/structure.png" alt="drawing" width="250"/>
+
 
 2. Please unzip the junit_lib (https://github.com/anonymousresearcher2020/ConSumSlice/blob/main/ConSumSlice/lib/junit_lib.zip) under the dropins directory of your eclipse root folder. It contains all the runtime Java libraries required for running microbat and tregression:
 ````yaml
