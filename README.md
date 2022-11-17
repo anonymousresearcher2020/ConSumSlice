@@ -2,7 +2,7 @@
 
 This repository hosts ConSumSlice, a regression analysis approach based on program slicing. 
 Given a test failure and two versions of a program and a test passing on one and failing on the other version of the program, 
-ConSumSlice automatically generates a summarized version of the slices produced by dual slicing technique. 
+ConSumSlice automatically generates a summarized version of the slices produced by the dual slicing technique. 
 
 ## Table of Contents
 1. [Requirements](#Requirements)
@@ -25,15 +25,15 @@ ConSumSlice automatically generates a summarized version of the slices produced 
 
 ## Building the Tool
 
-ConSumSlice relies on TRegression (ERASE) (https://github.com/llmhyy/tregression) project to align the two traces. It also relies on Slicer4J (https://github.com/resess/Slicer4J) to compute control and data-flow dependencies. 
+ConSumSlice relies on the TRegression (ERASE) (https://github.com/llmhyy/tregression) project to align the two traces. It also relies on Slicer4J (https://github.com/resess/Slicer4J) to compute control and data-flow dependencies. 
 To prevent any inconsistencies between the tool versions that we used and newer versions, 
-we included the source code of Slicer4J, ERASE, and its underlying Microbat (https://github.com/llmhyy/microbat) project.
+we included the repositories of Slicer4J, ERASE, and its underlying Microbat (https://github.com/llmhyy/microbat) project.
 
-Start with cloning the repository:
+1. Start with cloning the repository:
 ````yaml
 git clone https://github.com/anonymousresearcher2020/ConSumSlice.git
 ````
-In this repo we provide:
+In this repo, we provide:
 1. microbat: including all microbat subprojects
 2. tregression
 3. Slicer4J
@@ -41,7 +41,7 @@ In this repo we provide:
 
 Note that ConSumSlice, Microbat, and TRegression projects are Eclipse plugin project. 
 
-1. You need to import the following projects through "Existing Projects into Workspace":
+2. You need to import the following projects through "Existing Projects into Workspace":
 
 <img align="right" src="img/structure.png" alt="drawing" width="350"/>
 
@@ -55,7 +55,7 @@ Note that ConSumSlice, Microbat, and TRegression projects are Eclipse plugin pro
 - tregression/tregression
 
 
-2. Please unzip the junit_lib (https://github.com/anonymousresearcher2020/ConSumSlice/blob/main/ConSumSlice/lib/junit_lib.zip) under the dropins directory of your eclipse root folder. It contains all the runtime Java libraries required for running microbat and tregression:
+3. Please unzip the junit_lib (https://github.com/anonymousresearcher2020/ConSumSlice/blob/main/ConSumSlice/lib/junit_lib.zip) under the dropins directory of your eclipse root folder. It contains all the runtime Java libraries required for running microbat and tregression:
 ````yaml
 $path-to-eclipse_root_folder\dropins\junit_lib.
 ````
