@@ -120,4 +120,5 @@ The structure of Defects4J is as follows:
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|__ ...<br />
 
 You can run each bugs similar to running our subjects. 
+
 ---
