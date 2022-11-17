@@ -51,9 +51,7 @@ Note that ConSumSlice, Microbat, and TRegression projects are Eclipse plugin pro
 - mirobat/mutation
 - mirobat/sav.commons
 - tregression/tregression
-
-
-![](/img/structure.png)
+<img align="right" src="img/structure.png" alt="drawing" width="250"/>
 
 2. Please unzip the junit_lib (https://github.com/anonymousresearcher2020/ConSumSlice/blob/main/ConSumSlice/lib/junit_lib.zip) under the dropins directory of your eclipse root folder. It contains all the runtime Java libraries required for running microbat and tregression:
 ````yaml
@@ -90,8 +88,8 @@ As running the client and library projects needs merging two projects in one and
 The structure of the folder is as follows:
 
 |__ ConSumSlice<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|__ 1 (bug_id: jettison-xstream)<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|__ 2   <br /> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|__ 1 <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|__ 2 <br /> 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|__ ...<br />
 
 Here is an example of running bug_id 6 of ConSumSlice subjects:
@@ -100,7 +98,7 @@ Here is an example of running bug_id 6 of ConSumSlice subjects:
 
 Where, the base folder storing the ConSumSlice subjects is "/Documents/Projects/defects4j/bug_repos/". 
 "ConSumSlice" is the name of the benchmark to run. 
-Bug_id is 6 and the failing test is "com.intuit.wasabi.export.rest.impl.DefaultRestEndPointTest::testGetRestEndPointURI"
+Bug_id is 6 and the failing test is "com.intuit.wasabi.export.rest.impl.DefaultRestEndPointTest::testGetRestEndPointURI".
 
 The failing test (test_class::test_method) is stored in the "failing_tests" file in the buggy version of each subject. 
 
@@ -119,5 +117,5 @@ The structure of Defects4J is as follows:
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|__ 2 (bug_id)<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|__ ...<br />
 
-
+You can run each bugs similar to running our subjects. 
 ---
