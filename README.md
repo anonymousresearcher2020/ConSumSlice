@@ -43,44 +43,51 @@ Note that ConSumSlice, Microbat, and TRegression projects are Eclipse plugin pro
 
 1. You need to import the following projects through "Existing Projects into Workspace":
 
+- ConSumSlice
+- mirobat/experiment.utils
 - microbat/mirobat
 - mirobat/microbat_instrumentator
 - mirobat/microbat_junit_test
 - mirobat/mutation
 - mirobat/sav.commons
-- mirobat/experiment.utils
 - tregression/tregression
-- ConSumSlice
+
 
 ![](/img/structure.png)
 
-2. Please unzip the junit_lib ("ConSumSlice/lib/junit_lib.zip") under the dropins directory of your eclipse root folder. It contains all the runtime Java libraries required for running microbat and tregression:
+2. Please unzip the junit_lib (https://github.com/anonymousresearcher2020/ConSumSlice/blob/main/ConSumSlice/lib/junit_lib.zip) under the dropins directory of your eclipse root folder. It contains all the runtime Java libraries required for running microbat and tregression:
 ````yaml
 $path-to-eclipse_root_folder\dropins\junit_lib.
 ````
 For example,
 ````yaml
-/path-to/Eclipse.app/Contents/Eclipse/dropins
+/Applications/Eclipse.app/Contents/Eclipse/dropins
 ````
 
 ---
 ---
-## Running the Tool with Main() method in Run
+## Running the Tool
+### General guideline: Running with Main() method in Run
 Now, you can run ConSumSlice through the main method in the run class (run as "Java Application"):
 
 ![](/img/run.png)
 
-The main method takes as input following arguments: 
-- the path to the base folder, including two versions (See below for our subject and Defects4J). 
+The main method takes as input following four arguments: 
+- the path to the base folder, including two versions (See below for our subjects and Defects4J). 
 - The benchmark name to run: ConSumSlice, Math, Closure, ....
 - The bug_id
 - The failing test
 
+Here is an example of the structure of the bug repositories:
+
+![](/img/fileStructure.png)
+
 ---
 
 ### Running on Our Subjects
-As running the client and library projects needs merging two projects in one and create a merged jar to run Slicer4J, we provide the merged and ready to run folders in a Google Drive folder (https://drive.google.com/file/d/1XZ_lJG7cgMJvOSvlURCJgSG3Hu-cFvWM/view?usp=share_link):
-The structure of ConSumSlice should be as follows:
+As running the client and library projects needs merging two projects in one and creating a merged jar to run Slicer4J, we provide the merged and ready to run folders in a Google Drive folder (https://drive.google.com/file/d/1XZ_lJG7cgMJvOSvlURCJgSG3Hu-cFvWM/view?usp=share_link).
+
+The structure of the folder is as follows:
 
 |__ ConSumSlice<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|__ 1 (bug_id: jettison-xstream)<br />
@@ -89,13 +96,14 @@ The structure of ConSumSlice should be as follows:
 
 Here is an example of running bug_id 6 of ConSumSlice subjects:
 
-![](/img/arg.png)
+![](/img/args.png)
 
 Where, the base folder storing the ConSumSlice subjects is "/Documents/Projects/defects4j/bug_repos/". 
 "ConSumSlice" is the name of the benchmark to run. 
 Bug_id is 6 and the failing test is "com.intuit.wasabi.export.rest.impl.DefaultRestEndPointTest::testGetRestEndPointURI"
 
 The failing test (test_class::test_method) is stored in the "failing_tests" file in the buggy version of each subject. 
+
 ---
 
 ### Running on Defects4J
