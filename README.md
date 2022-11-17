@@ -43,7 +43,7 @@ Note that ConSumSlice, Microbat, and TRegression projects are Eclipse plugin pro
 
 1. You need to import the following projects through "Existing Projects into Workspace":
 
-<img align="right" src="img/structure.png" alt="drawing" width="250"/>
+<img align="right" src="img/structure.png" alt="drawing" width="450"/>
 
 - ConSumSlice
 - mirobat/experiment.utils
