@@ -34,10 +34,10 @@ we included the repositories of Slicer4J, ERASE, and its underlying Microbat (ht
 git clone https://github.com/anonymousresearcher2020/ConSumSlice.git
 ````
 In this repo, we provide:
-- a. microbat: including all microbat subprojects
-- b. tregression
-- c. Slicer4J
-- d. ConSumSlice
+- microbat: including all microbat subprojects
+- tregression
+- Slicer4J
+- ConSumSlice
 
 Note that ConSumSlice, Microbat, and TRegression projects are Eclipse plugin project. 
 
